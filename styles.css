@@ -156,6 +156,9 @@ nav a {
     list-style-type: disc;
     margin-left: 20px;
 }
+#features li{
+    margin: 2em 0;
+}
 
 /* Testimonials section styles */
 #testimonials {
@@ -246,4 +249,8 @@ nav a {
     font-size: 14px;
     line-height: 1.5em;
     letter-spacing: .025em;
+}
+.feature{
+    font-weight: bold;
+    font-size: large;
 }
