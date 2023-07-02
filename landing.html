@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyticare - Inteligencia hospitalaria</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #8000e9;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        form input{
+            margin: .5em auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #landing {
+            background-image: url('./images/analyticare-logo.svg');
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            min-height: 700px;
+            height: 95vh;
+            position: relative;
+            z-index: 0;
+            /* justify-items: center; */
+        }
+
+        #landing-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #dff2decf;
+            /* Adjust the color and opacity as needed */
+            /* z-index: 0; */
+        }
+
+        #landing-overlay h1 {
+            margin: .7em;
+            font-size: 3.5em;
+        }
+
+        #landing-overlay p {
+            margin: 1em;
+            padding: 0 1em;
+            font-size: 1.25em;
+            color: #8000e9;
+            letter-spacing: 1.35px;
+            word-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .cta-button {
+            margin: 1em 1em 2.5em 1em;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #e3e3e3;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            background-color: #1db909;
+            font-weight: bolder;
+            box-shadow: 1px 2px 20px 0px #13e900;
+            border-top:  3px solid #13e900;
+            border-left:  3px solid #13e900;
+        }
+        
+        .cta-button:hover {
+            background-color: #8000e9;
+            box-shadow: 1px 2px 20px 0px #13e900;
+            /* border-top:  3px solid #e6acff; */
+            /* border-left:  3px solid #e6acff; */
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            color: #1db909;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer * {
+            color: #1db909;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        #email {
+            min-height: 25px;
+            padding: .7em 1.5em;
+            text-align: center;
+            font-size: 1em;
+            /* color: #8000e9; */
+            border-image-slice: 3;
+            border-image-width: 1px;
+            border-width: 3px;
+            border-radius: 5px;
+            /* border: 1px solid #13e900; */
+            border-image-source: linear-gradient(to left, #13e900, #e6acff);
+            box-shadow: 0px 0px 20px -2px #13e900;
+        }
+        
+        #email:focus {
+            outline: solid 2px #e6acff;
+            border-color: inherit;
+            border-image-source: linear-gradient(to left, #e6acff, #e6acff);
+            box-shadow: 0px 0px 20px 5px #e6acff;
+        }
+        @media (min-width: 1200px) {
+            #landing {
+            background-size: 40%;
+            /* justify-items: center; */
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <div id="header-logo" class="p-3">
+                <img src="./images/analyticare-logo.svg" class="w-full" alt="" srcset="">
+            </div>
+        </nav>
+    </header> -->
+
+    <section id="landing">
+        <div id="landing-overlay">
+            <div class="container">
+                <a href="/" target="_blank" rel="noopener noreferrer">
+
+                    <h1>AnalityCare</h1>
+                </a>
+                <p class="bold">Revolucion digital hospitalaria, al alcance de tu mano.</p>
+            </div>
+            <form method="POST" action="/request-invitation" class="flex flex-col">
+                <input type="emai" id="email" name="email" required placeholder="email@domain.com">
+                <button type="submit" class="cta-button">Obtener Demo</button>
+            </form>
+            <p class="">Administración digital detallada de consumo hospitalario y
+                reportes con información reelevante para tomar siempre las mejores decisiones.
+                <br>
+                <span class="bold">¡La
+                    información que le da poder a su hospital!</span></p>
+        </div>
+    </section>
+
+    <!-- <img src="./analysis.jpg" alt="" class="w-full"> -->
+
+
+    <footer>
+        <div>
+            <a href="privacy.html">Política de Privacidad</a>
+            <a href="terms.html">Términos y Condiciones</a>
+        </div>
+        <div>
+            <!-- Social media links -->
+            coded by <a href="https://jesusrebollar.com" target="_blank">Rebjai</a>
+        </div>
+    </footer>
+</body>
+
+</html>
